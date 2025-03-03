@@ -32,7 +32,7 @@ const Hero = () => {
                   document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                Get in Touch
+                Get in touch
               </a>
               <a
                 href="#projects"
@@ -42,7 +42,7 @@ const Hero = () => {
                   document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                View My Work
+                View my work
               </a>
               <a
                 href="Nibraas_Resume.pdf"
@@ -50,7 +50,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View Resume
+                View my resume
               </a>
             </div>
           </motion.div>
