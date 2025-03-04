@@ -5,18 +5,6 @@ import { motion } from 'framer-motion';
 const Projects = () => {
   const projects = [
     {
-      title: 'Algorithmic Trading',
-      period: 'Aug 2022 – Present',
-      description:
-        'Developing securities price prediction models using reinforcement learning and various neural networks. Achieved a 15% simulated return over 6 months with momentum-based trading algorithms.',
-      technologies: ['Python', 'TensorFlow', 'QuantConnect', 'Reinforcement Learning'],
-      highlights: [
-        'Implemented mean-reversion models and Bollinger Bands',
-        'Improved execution efficiency by 30% using multithreading',
-        'Built automated portfolio rebalancing pipelines',
-      ],
-    },
-    {
       title: 'Sports Analytics Platform',
       period: '2024 – Present',
       description:
@@ -26,18 +14,6 @@ const Projects = () => {
         'Developed algorithms to extract key biomechanical features',
         'Created visualization tools for coaches and athletes',
         'Implemented real-time feedback mechanisms',
-      ],
-    },
-    {
-      title: 'Explainable AI for Autism',
-      period: '2023 – Present',
-      description:
-        'Implemented an explainable AI system for behavioral prediction in Autism Spectrum Disorder, achieving 90% F1 score in identifying precursors to challenging behaviors.',
-      technologies: ['Python', 'TensorFlow', 'Wearable Sensors', 'XAI Techniques'],
-      highlights: [
-        'Developed interpretable ML models for clinical use',
-        'Created visualization tools for non-technical stakeholders',
-        'Integrated multiple sensor modalities for improved accuracy',
       ],
     },
     {
@@ -53,8 +29,32 @@ const Projects = () => {
       ],
     },
     {
+      title: 'Explainable AI for Autism',
+      period: '2023 – Present',
+      description:
+        'Implemented an explainable AI system for behavioral prediction in Autism Spectrum Disorder, achieving 90% F1 score in identifying precursors to challenging behaviors.',
+      technologies: ['Python', 'TensorFlow', 'Wearable Sensors', 'XAI Techniques'],
+      highlights: [
+        'Developed interpretable ML models for clinical use',
+        'Created visualization tools for non-technical stakeholders',
+        'Integrated multiple sensor modalities for improved accuracy',
+      ],
+    },
+    {
+      title: 'Algorithmic Trading',
+      period: 'Aug 2022 – Present',
+      description:
+        'Developing securities price prediction models using reinforcement learning and various neural networks. Achieved a 15% return over 6 months with momentum-based trading algorithms.',
+      technologies: ['Python', 'TensorFlow', 'QuantConnect', 'Reinforcement Learning'],
+      highlights: [
+        'Implemented mean-reversion models and Bollinger Bands',
+        'Improved execution efficiency by 30% using multithreading',
+        'Built automated portfolio rebalancing pipelines',
+      ],
+    },
+    {
       title: 'Mobile Health App for ASD',
-      period: '2024 – Present',
+      period: '2022 – 2023',
       description:
         'Built a cross-platform Flutter survey app for caregivers of children with Autism Spectrum Disorder, facilitating data collection for research and clinical interventions.',
       technologies: ['Flutter', 'Dart', 'Firebase', 'RESTful APIs'],
