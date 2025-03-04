@@ -8,7 +8,7 @@ const About = () => {
       degree: 'Ph.D. in Computer Science',
       institution: 'Vanderbilt University',
       location: 'Nashville, TN',
-      period: 'Expected May 2025',
+      period: 'Expected December 2025',
       description: 'Dissertation: "xAI for Wearable Systems: Predicting Behaviors, Monitoring Cognition, and Enhancing Performance"',
     },
     {
@@ -44,16 +44,16 @@ const About = () => {
           <h3 className="text-2xl font-bold text-secondary-900 mb-6">Who I Am</h3>
           <div className="space-y-4 text-secondary-700">
             <p>
-              I'm a Ph.D. student in Computer Science at Vanderbilt University, specializing in explainable AI for wearable systems. My research focuses on using machine learning and sensor data to predict behaviors, monitor cognition, and enhance human performance.
+              I'm a Ph.D. student in Computer Science at Vanderbilt University with a strong foundation in machine learning, software development, and human-centered AI. My work spans explainable AI, sensor-based modeling, and predictive analytics, with applications in healthcare, sports, and beyond.
             </p>
             <p>
-              With a strong background in both research and practical application, I've led projects comparing novice and expert boxing techniques using IMU sensors, developed ML models to detect precursors to dangerous behaviors in children with autism, and built cross-platform applications for various research initiatives.
+              The projects I've led range from developing ML models for behavior prediction and cognitive monitoring to building cross-platform applications and backend systems for real-time data processing. My experience spans computer vision, NLP, time-series analysis, and full-stack development.
             </p>
             <p>
-              I'm passionate about bridging the gap between academic research and real-world applications, particularly in healthcare and sports analytics. My work aims to make complex AI systems more interpretable and accessible to non-technical users.
+              I'm passionate about bridging the gap between research and real-world applications, designing AI-driven solutions that are both powerful and accessible. Whether it's optimizing sports performance, improving health outcomes, or streamlining complex workflows, I focus on creating practical, interpretable, and user-friendly technology.
             </p>
             <p>
-              Outside of my academic pursuits, I enjoy cooking, boxing, and exploring new restaurants. I'm fluent in English and have conversational skills in Hindi and Urdu.
+              Outside of work, I enjoy cooking, boxing, and exploring new restaurants. I'm fluent in English and have conversational skills in Hindi and Urdu.
             </p>
           </div>
         </motion.div>

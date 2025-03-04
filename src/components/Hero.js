@@ -20,8 +20,8 @@ const Hero = () => {
               Ph.D. Student in Computer Science at Vanderbilt University
             </p>
             <p className="text-lg text-secondary-600 mb-10 max-w-2xl mx-auto lg:mx-0">
-              Specializing in xAI for Wearable Systems, Behavioral Prediction, and Cognitive Monitoring.
-              Passionate about leveraging technology to enhance human performance and improve lives.
+              Exploring xAI, wearable systems, and predictive modeling through research while building machine learning solutions, 
+              software systems, and data-driven insights for healthcare, sports, and enterprise applications.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
