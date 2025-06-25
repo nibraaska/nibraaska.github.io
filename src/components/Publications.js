@@ -16,6 +16,51 @@ const Publications = () => {
 
   const publications = [
     {
+      title: 'Decoding Human Motion: A Scoping Review of Explainable AI Methods in Movement Analysis',
+      authors: 'Khan, N., Wang, D., Ghosh, R., Tauseef, M., Mion, L., Ma, M., Sarkar, N. ',
+      year: '2025',
+      venue: 'In Progress',
+      type: 'I',
+    },
+    {
+      title: 'Explainable Deep Learning for IADL Activity Prediction in Mild Cognitive Impairment using Wearable Sensors',
+      authors: 'Khan, N., Cole, K., Sarkar, N.',
+      year: '2025',
+      venue: 'In Progress',
+      type: 'I',
+    },
+    {
+      title: 'Interpretable Deep Few-Shot Learning for Prediction of Precursors to Challenging Behaviors in Individuals with Intellectual and Developmental Disabilities',
+      authors: 'Khan, N., Shragge, I., Zilinskaite, G., Plunk, A., Staubitz, J., Rajaraman, A., Weitlauf, A., Sarkar, N.',
+      year: '2025',
+      venue: 'In Progress',
+      type: 'I',
+    },
+    {
+      title: 'A multi-site randomized clinical trial of socially assistive robots on engaging older adults with cognitive impairment residing in long-term care settings: A protocol paper',
+      authors: 'Tate, J., Mion, L., Migovich, M., Ghosh, R., Khan, N., Kilpatrick, A., Scharre, D., Newhouse, P., Maxwell, C., Tan, A., Sarkar, N.',
+      year: '2025',
+      venue: 'Journal',
+      type: 'J',
+      link: 'https://doi.org/10.1016/j.cct.2025.107980'
+    },
+    {
+      title: 'A Universal Web-Based Tool for Multimodal Data Synchronization and Labeling',
+      authors: 'Khan, N., Haan R., Shragge, I., Zilinskaite, G., Plunk, A., Staubitz, J., Rajaraman, A., Weitlauf, A., Sarkar, N.',
+      year: '2025',
+      venue: 'Conference',
+      type: 'C',
+      link: 'https://link.springer.com/chapter/10.1007/978-3-031-93965-5_18'
+    },
+    {
+      title: 'Factors Affecting Implementation of Socially Assistive Robots in Long-Term Care Facilities',
+      authors: 'Tate J., Maxwell, C., Migovich, M., Khan, N., Ghosh, R., Colopietro, K., Kilpatrick, A., Sarkar, N.',
+      year: '2025',
+      venue: 'Journal',
+      type: 'J',
+      link: 'https://doi.org/10.1093/geroni/igae098.2559'
+    },
+    {
       title: 'Autistic User Input on Wearable Technology: Preliminary Feedback to Inform System Design',
       authors: 'Weitlauf, A., Khan, N., Plunk, A., Sargent, A., Staubitz, J., Dieffenderfer, J., Sarkar, N.',
       year: '2024',
@@ -27,7 +72,7 @@ const Publications = () => {
       authors: 'Khan, N., Plunk, A., Zhaobo, Z., Adiani, D., Staubitz, J., Weitlauf, A., Sarkar, N.',
       year: '2024',
       venue: 'Journal',
-      type: 'J.I',
+      type: 'J',
       link: 'https://doi.org/10.1177/20552076241287884',
     },
     {

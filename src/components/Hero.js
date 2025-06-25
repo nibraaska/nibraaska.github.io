@@ -45,12 +45,12 @@ const Hero = () => {
                 View my work
               </a>
               <a
-                href="Nibraas_Resume.pdf"
+                href="nk_cv.pdf"
                 className="btn btn-primary"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View my resume
+                View my CV
               </a>
             </div>
           </motion.div>
