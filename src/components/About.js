@@ -44,7 +44,7 @@ const About = () => {
           <h3 className="text-2xl font-bold text-secondary-900 mb-6">Who I Am</h3>
           <div className="space-y-4 text-secondary-700">
             <p>
-              I'm a Ph.D. student in Computer Science at Vanderbilt University with a strong foundation in machine learning, software development, and human-centered AI. My work spans explainable AI, sensor-based modeling, and predictive analytics, with applications in healthcare, sports, and beyond.
+              I'm a Ph.D. candidate in Computer Science at Vanderbilt University with a strong foundation in machine learning, software development, and human-centered AI. My work spans explainable AI, sensor-based modeling, and predictive analytics, with applications in healthcare, sports, and beyond.
             </p>
             <p>
               The projects I've led range from developing ML models for behavior prediction and cognitive monitoring to building cross-platform applications and backend systems for real-time data processing. My experience spans computer vision, NLP, time-series analysis, and full-stack development.

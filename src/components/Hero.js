@@ -17,7 +17,7 @@ const Hero = () => {
               <span className="text-primary-600">Nibraas Khan</span>
             </h1>
             <p className="text-xl md:text-2xl text-secondary-700 mb-8">
-              Ph.D. Student in Computer Science at Vanderbilt University
+              Ph.D. Candidate in Computer Science at Vanderbilt University
             </p>
             <p className="text-lg text-secondary-600 mb-10 max-w-2xl mx-auto lg:mx-0">
               Exploring xAI, wearable systems, and predictive modeling through research while building machine learning solutions, 
