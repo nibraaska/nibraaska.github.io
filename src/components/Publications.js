@@ -37,6 +37,13 @@ const Publications = () => {
       type: 'I',
     },
     {
+      title: 'Supporting Social Interaction and Engagement in Long-Term Care Through Paired Social Robot–Virtual Reality Interactions for Older Adults with Cognitive Impairment and Apathy',
+      authors: 'Migovich, M., Ghosh, R., Khan, N., Maxwell, C., Newhouse, P., Scharre, D., Tan, A., Tate, J., Mion, L., Sarkar, N.',
+      year: '2026',
+      venue: 'Frontiers in Dementia',
+      type: 'J',
+    },
+    {
       title: 'A multi-site randomized clinical trial of socially assistive robots on engaging older adults with cognitive impairment residing in long-term care settings: A protocol paper',
       authors: 'Tate, J., Mion, L., Migovich, M., Ghosh, R., Khan, N., Kilpatrick, A., Scharre, D., Newhouse, P., Maxwell, C., Tan, A., Sarkar, N.',
       year: '2025',
@@ -189,15 +196,15 @@ const Publications = () => {
     },
   ];
 
-  const filteredPublications = activeFilter === 'all' 
-    ? publications 
-    : publications.filter(pub => pub.type.includes(activeFilter));
+  const filteredPublications = (activeFilter === 'all'
+    ? publications
+    : publications.filter(pub => pub.type.includes(activeFilter))
+  ).slice().sort((a, b) => b.year - a.year);
 
   return (
     <Section
       id="publications"
       title="Publications"
-      subtitle="My academic contributions to the field"
       className="bg-secondary-50"
     >
       <div className="mb-8 flex flex-wrap justify-center gap-2">

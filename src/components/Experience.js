@@ -7,20 +7,40 @@ const Experience = () => {
 
   const experienceData = [
     {
-      title: 'Research Assistant',
-      company: 'Vanderbilt University',
+      title: 'Research Scientist Intern – Few-Shot Learning',
+      company: 'Mitsubishi Electric Research Laboratories',
+      location: 'Cambridge, MA',
+      period: 'Jan 2026 – Present',
+      responsibilities: [
+        'Developing a neural process framework for industrial sensor anomaly detection; using reinforcement learning to select optimal context set sizes under domain shift',
+        'Integrating entropic partial optimal transport with Bayesian network structure for cross-domain feature alignment and pseudo-sample generation; improving R² and reducing training time',
+        'Preparing two Python libraries for industrial deployment and publication: one for the neural process pipeline and one for optimal transport, each with evaluation harnesses, baselines, and ablation studies',
+        'Collaborating on research applying VLMs and VLAs to robotic manipulation and foundation models for automated scientific discovery in industrial sensing',
+      ],
+    },
+    {
+      title: 'Applied Scientist Intern – Multi-Agent Systems',
+      company: 'Actual Insight',
+      location: 'Nashville, TN',
+      period: 'Oct 2025 – Jan 2026',
+      responsibilities: [
+        'Designed and deployed multi-agent LLM pipelines that extracted actionable insights from enterprise client data; implemented provenance tracking so each output linked back to specific source material',
+        'Built privacy-preserving guardrails across the multi-agent pipeline; enforced role-based data scoping so each agent accessed only authorized client segments, with PII redaction and audit logging',
+        'Scoped natural language to SQL for small and medium-sized business data using a multi-agent workflow with LangGraph; used locality-sensitive hashing with caching to inject only relevant schema context',
+      ],
+    },
+    {
+      title: 'Graduate Researcher',
+      company: 'Vanderbilt University – Robotics and Autonomous Systems Lab',
       location: 'Nashville, TN',
       period: 'May 2020 – Present',
       responsibilities: [
-        'Leading research on comparing novice and expert boxing techniques using IMU sensors and GRF insoles',
-        'Developing ML models to detect precursors to dangerous behaviors in children with autism',
-        'Analyzing gait differences between MCI and non-MCI participants during cognitive/physical tasks',
-        'Designing an on-road driving analysis tool for drivers with Autism Spectrum Disorder',
-        'Built a cross-platform Flutter survey app for caregivers of children with ASD',
-        'Engineered a sports analytics platform for biomechanical concept extraction',
-        'Implemented an explainable AI system for behavioral prediction in ASD (90% F1 score)',
-        'Built a pipeline for gait analysis in MCI using 50+ biomechanical features',
-        'Created interactive dashboards for clinical and non-technical teams',
+        'Shipping a Python xAI library (Tiered xAI Framework) that discovers motion primitives from time-series, aligns them to prototypes, and produces tiered explanations for stakeholder and developer review',
+        'Training a few-shot PyTorch model (REACT) in a low-data clinical environment; engineering a multimodal feature pipeline from wearable time-series and audio into 50+ features; tuning with Optuna to reach 84.6% F1',
+        'Operating MLOps stack on AWS EC2 with Kafka ingestion, Great Expectations for data quality, and Airflow orchestration in Docker; deploying artifacts to an iOS fleet with real-time inference and Apple Watch alerts',
+        'Building an end-to-end wearable biomechanical analysis system: custom PCB with IMUs/ESP32, streaming firmware, cloud ingestion, and a React app with a 3D avatar streaming 100 Hz from 10 IMUs with <1s feedback',
+        'Training a TensorFlow/Keras Bi-GRU with 4-head attention to identify digital biomarkers differentiating MCI vs. healthy; reporting 86% F1; applying the xAI library to decompose sequences into motion primitives',
+        'Scaled a cross-institution mentorship program; mentored 30+ students (2 to PhD, 3 to master\'s); built onboarding docs, starter repos, and tests that improved reproducibility and delivery velocity',
       ],
     },
     {
@@ -29,12 +49,10 @@ const Experience = () => {
       location: 'Nashville, TN',
       period: 'Jan 2023 – Present',
       responsibilities: [
-        'Created a structured development initiative for college students',
-        'Connected product owners with project managers/developers to create real-world products',
-        'Collaborated with multiple clients (Wond\'ry at Vanderbilt, TRIAD, Freedom Co, Nexus)',
-        'Mentored 20+ students from several universities',
-        'Provided a framework for designing/developing production apps using AWS, React, etc.',
-        'Managed logistics for better engagement between students and business partners',
+        'Co-founded a community program where students gain career-ready skills by building pro-bono software for real clients, supported by technical workshops and industry mentorship',
+        'Guided students to ship real-time ML systems, including a UAV ground-control station (YOLOv8 + DeepSORT + WebRTC) and an XGBoost clinical analysis tool with online learning for Vanderbilt\'s TRIAD',
+        'Mentored 30+ students from several universities across hardware, firmware, and mobile development',
+        'Provided a framework for designing and developing production apps using AWS, React, and more',
       ],
     },
     {
@@ -80,7 +98,6 @@ const Experience = () => {
     <Section
       id="experience"
       title="Professional Experience"
-      subtitle="My journey through academia and industry"
       className="bg-secondary-50"
     >
       <div className="mb-8 flex flex-wrap justify-center gap-2">

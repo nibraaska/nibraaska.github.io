@@ -8,7 +8,7 @@ const About = () => {
       degree: 'Ph.D. in Computer Science',
       institution: 'Vanderbilt University',
       location: 'Nashville, TN',
-      period: 'Expected December 2025',
+      period: 'Aug 2020 – June 2026 Expected',
       description: 'Dissertation: "xAI for Wearable Systems: Predicting Behaviors, Monitoring Cognition, and Enhancing Performance"',
     },
     {
@@ -31,7 +31,6 @@ const About = () => {
     <Section
       id="about"
       title="About Me"
-      subtitle="Learn more about my background, education, and interests"
       className="bg-white"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -44,16 +43,16 @@ const About = () => {
           <h3 className="text-2xl font-bold text-secondary-900 mb-6">Who I Am</h3>
           <div className="space-y-4 text-secondary-700">
             <p>
-              I'm a Ph.D. candidate in Computer Science at Vanderbilt University with a strong foundation in machine learning, software development, and human-centered AI. My work spans explainable AI, sensor-based modeling, and predictive analytics, with applications in healthcare, sports, and beyond.
+              I'm a Ph.D. candidate in Computer Science at Vanderbilt University and a research scientist with 25+ publications, shipping interpretable ML from prototype to production across healthcare, industrial sensing, and multi-agent systems.
             </p>
             <p>
-              The projects I've led range from developing ML models for behavior prediction and cognitive monitoring to building cross-platform applications and backend systems for real-time data processing. My experience spans computer vision, NLP, time-series analysis, and full-stack development.
+              My methods span explainable AI, few-shot learning, multimodal sensor fusion, LLMs, VLMs, and agentic pipelines. I've built full MLOps stacks, deployed real-time inference systems on mobile and cloud, and developed open-source Python libraries for xAI and optimal transport.
             </p>
             <p>
-              I'm passionate about bridging the gap between research and real-world applications, designing AI-driven solutions that are both powerful and accessible. Whether it's optimizing sports performance, improving health outcomes, or streamlining complex workflows, I focus on creating practical, interpretable, and user-friendly technology.
+              I care about making ML systems that are interpretable, reliable, and production-ready. That means auditable explanations for clinicians, privacy-preserving guardrails for enterprise data, and feedback loops that keep models calibrated over time.
             </p>
             <p>
-              Outside of work, I enjoy cooking, boxing, and exploring new restaurants. I'm fluent in English and have conversational skills in Hindi and Urdu.
+              Outside of work, I enjoy cooking, boxing, and exploring new restaurants. I'm fluent in English and conversational in Hindi and Urdu.
             </p>
           </div>
         </motion.div>

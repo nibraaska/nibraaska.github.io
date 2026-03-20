@@ -1,85 +1,61 @@
 import React from 'react';
 import Section from './Section';
 import { motion } from 'framer-motion';
-import { tools } from '../data/toolsData';
 
 const Skills = () => {
-  // Group tools by category
-  const groupedTools = tools.reduce((acc, tool) => {
-    const category = tool.category || 'Other';
-    if (!acc[category]) {
-      acc[category] = [];
-    }
-    acc[category].push(tool);
-    return acc;
-  }, {});
-
-  // Create skill categories array from grouped tools
-  const skillCategories = [
+  const specializations = [
     {
-      title: 'Programming Languages',
-      skills: groupedTools['Programming Languages'] || [],
+      area: 'Explainable AI',
+      detail: 'Motion primitive discovery, prototype alignment, tiered stakeholder explanations, saliency over raw signals, counterfactual exploration, and model-agnostic APIs for PyTorch and TensorFlow.',
     },
     {
-      title: 'Data Science & Machine Learning',
-      skills: groupedTools['Data Science & Machine Learning'] || [],
+      area: 'Few-Shot & Low-Data Learning',
+      detail: 'Neural processes, meta-learning, entropic optimal transport for cross-domain alignment, pseudo-sample generation, and clinical deployment under data scarcity.',
     },
     {
-      title: 'Web & Mobile Development',
-      skills: groupedTools['Web & Mobile Development'] || [],
+      area: 'Multimodal Sensor Fusion',
+      detail: 'Wearable IMUs, audio, and physiological signals; feature engineering across 50+ channels; real-time ingestion and inference pipelines on mobile and cloud.',
     },
     {
-      title: 'Research & Specialized Skills',
-      skills: groupedTools['Research & Specialized Skills'] || [],
+      area: 'Agentic LLM Systems',
+      detail: 'Multi-agent pipelines with LangGraph, provenance tracking, role-based data scoping, PII redaction, NL-to-SQL, and locality-sensitive hashing for context injection.',
+    },
+    {
+      area: 'Time-Series & Behavioral Modeling',
+      detail: 'Bi-GRU with attention, LSTMs, GANs, Siamese networks, digital biomarker discovery, and precursor detection for clinical and industrial applications.',
+    },
+    {
+      area: 'End-to-End ML Systems',
+      detail: 'Full-stack deployment from hardware to cloud to app: custom PCBs, streaming firmware, Kafka ingestion, Airflow orchestration, Docker packaging, and iOS fleet delivery with continuous monitoring.',
     },
   ];
 
-  // Get additional skills from the "Additional Skills & Tools" category
-  const additionalSkills = groupedTools['Additional Skills & Tools'] || [];
+  const stack = [
+    { label: 'Languages', items: 'Python, TypeScript, SQL, Kotlin, C#, Bash' },
+    { label: 'ML / AI', items: 'PyTorch, TensorFlow, Keras, Hugging Face Transformers, Scikit-learn, OpenCV, Optuna' },
+    { label: 'MLOps & Cloud', items: 'AWS (EC2, S3, SageMaker), Docker, Airflow, Kafka, GitHub Actions, Great Expectations, GCP' },
+    { label: 'Data & Databases', items: 'MongoDB, Supabase, SQLite, Firebase, Pandas, NumPy' },
+    { label: 'Dev & Mobile', items: 'React, React Native, Flask, WebSockets, Core ML, iOS / Android, Pytest' },
+  ];
 
   return (
     <Section
       id="skills"
       title="Skills & Expertise"
-      subtitle="Technical abilities and specialized knowledge"
       className="bg-white"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {skillCategories.map((category, categoryIndex) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        {specializations.map((spec, index) => (
           <motion.div
-            key={categoryIndex}
+            key={index}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
+            transition={{ duration: 0.5, delay: index * 0.08 }}
             className="bg-secondary-50 rounded-xl p-6"
           >
-            <h3 className="text-xl font-bold text-secondary-900 mb-6 flex items-center">
-              <span className="w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center mr-3">
-                {categoryIndex + 1}
-              </span>
-              {category.title}
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {category.skills.map((skill, skillIndex) => (
-                <a 
-                  key={skillIndex}
-                  href={skill.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
-                >
-                  <div className="w-10 h-10 flex-shrink-0 bg-white rounded-lg flex items-center justify-center mr-3">
-                    <img 
-                      src={skill.image} 
-                      alt={skill.name} 
-                      className="w-8 h-8 object-contain"
-                    />
-                  </div>
-                  <span className="font-medium text-secondary-800">{skill.name}</span>
-                </a>
-              ))}
-            </div>
+            <h3 className="text-base font-semibold text-primary-700 mb-2">{spec.area}</h3>
+            <p className="text-sm text-secondary-600 leading-relaxed">{spec.detail}</p>
           </motion.div>
         ))}
       </div>
@@ -88,21 +64,16 @@ const Skills = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-        className="mt-16 bg-secondary-50 rounded-xl p-6 md:p-8"
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="bg-secondary-50 rounded-xl p-6 md:p-8"
       >
-        <h3 className="text-xl font-bold text-secondary-900 mb-4">Additional Skills & Tools</h3>
-        <div className="flex flex-wrap gap-3">
-          {additionalSkills.map((skill, index) => (
-            <a
-              key={index}
-              href={skill.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-white text-secondary-800 rounded-full text-sm font-medium shadow-sm hover:shadow-md transition-shadow duration-300"
-            >
-              {skill.name}
-            </a>
+        <h3 className="text-lg font-semibold text-secondary-900 mb-6">Stack</h3>
+        <div className="space-y-3">
+          {stack.map((row, index) => (
+            <div key={index} className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
+              <span className="text-sm font-semibold text-secondary-500 w-36 shrink-0">{row.label}</span>
+              <span className="text-sm text-secondary-700">{row.items}</span>
+            </div>
           ))}
         </div>
       </motion.div>
@@ -110,4 +81,4 @@ const Skills = () => {
   );
 };
 
-export default Skills; 
+export default Skills;

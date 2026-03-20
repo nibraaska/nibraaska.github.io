@@ -10,9 +10,9 @@ const Layout = ({ children }) => {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'experience', label: 'Experience' },
-    { id: 'projects', label: 'Projects' },
     { id: 'publications', label: 'Publications' },
     { id: 'skills', label: 'Skills' },
+    { id: 'service', label: 'Service' },
     { id: 'contact', label: 'Contact' },
   ];
 
@@ -258,7 +258,7 @@ const Layout = ({ children }) => {
               </p>
               <p className="text-secondary-300">
                 <span className="font-medium text-white">Location:</span>{' '}
-                Nashville, TN 37216, USA
+                Cambridge, MA, USA
               </p>
             </div>
           </div>

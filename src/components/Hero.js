@@ -20,8 +20,7 @@ const Hero = () => {
               Ph.D. Candidate in Computer Science at Vanderbilt University
             </p>
             <p className="text-lg text-secondary-600 mb-10 max-w-2xl mx-auto lg:mx-0">
-              Exploring xAI, wearable systems, and predictive modeling through research while building machine learning solutions, 
-              software systems, and data-driven insights for healthcare, sports, and enterprise applications.
+              Research scientist with 25+ publications, shipping interpretable ML from prototype to production across healthcare, industrial sensing, and multi-agent systems. Methods span explainable AI, few-shot learning, multimodal sensor fusion, LLMs, VLMs, and agentic pipelines.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
@@ -34,23 +33,21 @@ const Hero = () => {
               >
                 Get in touch
               </a>
-              <a
-                href="#projects"
-                className="btn btn-primary"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                View my work
-              </a>
-              <a
+<a
                 href="nk_cv.pdf"
                 className="btn btn-primary"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 View my CV
+              </a>
+              <a
+                href="https://scholar.google.com/citations?user=2wlosyoAAAAJ"
+                className="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google Scholar
               </a>
             </div>
           </motion.div>

@@ -15,45 +15,10 @@ export const tools = [
         category: "Programming Languages"
     },
     {
-        name: "Swift",
-        description: "Apple's programming language",
-        link: "https://swift.org/",
-        image: "swift.svg",
-        category: "Programming Languages"
-    },
-    {
-        name: "C++",
-        description: "High-performance programming language",
-        link: "https://isocpp.org/",
-        image: "cpp.svg",
-        category: "Programming Languages"
-    },
-    {
-        name: "C",
-        description: "Foundational programming language",
-        link: "https://en.cppreference.com/w/c",
-        image: "c.svg",
-        category: "Programming Languages"
-    },
-    {
-        name: "JavaScript",
-        description: "Web programming language",
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-        image: "javascript.svg",
-        category: "Programming Languages"
-    },
-    {
         name: "SQL",
         description: "Database query language",
         link: "https://www.w3schools.com/sql/",
         image: "sql.svg",
-        category: "Programming Languages"
-    },
-    {
-        name: "MATLAB",
-        description: "Numerical computing environment",
-        link: "https://www.mathworks.com/products/matlab.html",
-        image: "matlab.svg",
         category: "Programming Languages"
     },
     {
@@ -405,6 +370,125 @@ export const tools = [
         description: "Design tool",
         link: "https://www.figma.com/",
         image: "figma.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "Kotlin",
+        description: "Modern JVM language",
+        link: "https://kotlinlang.org/",
+        image: "kotlin.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "Bash",
+        description: "Shell scripting",
+        link: "https://www.gnu.org/software/bash/",
+        image: "bash.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "Hugging Face Transformers",
+        description: "NLP and LLM library",
+        link: "https://huggingface.co/docs/transformers",
+        image: "huggingface.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "OpenCV",
+        description: "Computer vision library",
+        link: "https://opencv.org/",
+        image: "opencv.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "GitHub Actions",
+        description: "CI/CD automation",
+        link: "https://docs.github.com/en/actions",
+        image: "github.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "Kafka",
+        description: "Distributed event streaming",
+        link: "https://kafka.apache.org/",
+        image: "kafka.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "Airflow",
+        description: "Workflow orchestration",
+        link: "https://airflow.apache.org/",
+        image: "airflow.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "Great Expectations",
+        description: "Data quality validation",
+        link: "https://greatexpectations.io/",
+        image: "great-expectations.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "N8N",
+        description: "Workflow automation",
+        link: "https://n8n.io/",
+        image: "n8n.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "Supabase",
+        description: "Open-source Firebase alternative",
+        link: "https://supabase.com/",
+        image: "supabase.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "Flask",
+        description: "Python web framework",
+        link: "https://flask.palletsprojects.com/",
+        image: "flask.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "WebSockets",
+        description: "Real-time communication protocol",
+        link: "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
+        image: "websockets.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "Pytest",
+        description: "Python testing framework",
+        link: "https://docs.pytest.org/",
+        image: "pytest.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "Core ML",
+        description: "On-device ML for Apple platforms",
+        link: "https://developer.apple.com/documentation/coreml",
+        image: "coreml.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "TensorFlow Lite",
+        description: "On-device ML inference",
+        link: "https://www.tensorflow.org/lite",
+        image: "tensorflow.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "RAG & Prompt Engineering",
+        description: "Retrieval-augmented generation and LLM prompting",
+        link: "https://www.promptingguide.ai/",
+        image: "llm.svg",
+        category: "Additional Skills & Tools"
+    },
+    {
+        name: "LangGraph",
+        description: "Multi-agent LLM orchestration",
+        link: "https://langchain-ai.github.io/langgraph/",
+        image: "llm.svg",
         category: "Additional Skills & Tools"
     }
 ];

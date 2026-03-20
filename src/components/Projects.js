@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Section from './Section';
 import { motion } from 'framer-motion';
 
 const Projects = () => {
+  const [activeTab, setActiveTab] = useState(0);
+
   const projects = [
     {
       title: 'Sports Analytics Platform',
@@ -21,7 +23,7 @@ const Projects = () => {
       period: '2024 – Present',
       description:
         'Built a pipeline for gait analysis in Mild Cognitive Impairment using 50+ biomechanical features from 30 participants, identifying key markers of cognitive decline.',
-      technologies: ['Python', 'MATLAB', 'Statistical Analysis', 'Sensor Data Processing'],
+      technologies: ['Python', 'Statistical Analysis', 'Sensor Data Processing'],
       highlights: [
         'Extracted and analyzed complex gait patterns',
         'Identified correlations between gait and cognitive performance',
@@ -82,52 +84,65 @@ const Projects = () => {
     <Section
       id="projects"
       title="Projects"
-      subtitle="Highlights of my technical work and research"
       className="bg-white"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="mb-8 flex flex-wrap justify-center gap-2">
         {projects.map((project, index) => (
-          <motion.div
+          <button
             key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-50px' }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="bg-secondary-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+            className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+              activeTab === index
+                ? 'bg-primary-600 text-white shadow-md'
+                : 'bg-secondary-100 text-secondary-700 hover:bg-secondary-200'
+            }`}
+            onClick={() => setActiveTab(index)}
           >
-            <div className="p-6">
-              <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-bold text-secondary-900">{project.title}</h3>
-                <span className="text-sm text-secondary-500">{project.period}</span>
-              </div>
-              <p className="text-secondary-700 mb-4">{project.description}</p>
-              
-              <h4 className="text-sm font-semibold text-secondary-900 mb-2">Key Highlights:</h4>
-              <ul className="mb-4 space-y-1">
-                {project.highlights.map((highlight, i) => (
-                  <li key={i} className="text-secondary-700 text-sm flex items-start">
-                    <span className="text-primary-600 mr-2">•</span>
-                    <span>{highlight}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <div className="flex flex-wrap gap-2 mt-4">
-                {project.technologies.map((tech, i) => (
-                  <span
-                    key={i}
-                    className="px-3 py-1 bg-primary-100 text-primary-800 text-xs font-medium rounded-full"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </motion.div>
+            {project.title}
+          </button>
         ))}
       </div>
+
+      <motion.div
+        key={activeTab}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.3 }}
+        className="bg-secondary-50 rounded-xl shadow-lg p-6 md:p-8"
+      >
+        <div className="mb-6">
+          <div className="flex flex-wrap justify-between items-start gap-2">
+            <h3 className="text-2xl font-bold text-secondary-900">
+              {projects[activeTab].title}
+            </h3>
+            <span className="text-secondary-500 text-sm">{projects[activeTab].period}</span>
+          </div>
+        </div>
+
+        <p className="text-secondary-700 mb-6">{projects[activeTab].description}</p>
+
+        <ul className="space-y-3 mb-6">
+          {projects[activeTab].highlights.map((highlight, index) => (
+            <li key={index} className="flex items-start">
+              <span className="text-primary-600 mr-2 mt-1">•</span>
+              <span className="text-secondary-700">{highlight}</span>
+            </li>
+          ))}
+        </ul>
+
+        <div className="flex flex-wrap gap-2">
+          {projects[activeTab].technologies.map((tech, i) => (
+            <span
+              key={i}
+              className="px-3 py-1 bg-primary-100 text-primary-800 text-xs font-medium rounded-full"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </motion.div>
     </Section>
   );
 };
 
-export default Projects; 
+export default Projects;

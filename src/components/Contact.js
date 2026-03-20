@@ -59,7 +59,6 @@ const Contact = () => {
     <Section
       id="contact"
       title="Get In Touch"
-      subtitle="Have a question or want to work together? Reach out to me!"
       className="bg-secondary-50"
     >
       <div className="max-w-2xl mx-auto">
