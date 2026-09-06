@@ -6,8 +6,6 @@ const publicationTypes = {
   J: 'Journal',
   A: 'Abstract',
   X: 'Preprint',
-  S: 'Symposium',
-  I: 'In Progress',
 };
 
 const publications = [
@@ -18,13 +16,6 @@ const publications = [
     venue: 'ICML 2026 RLxF Workshop',
     type: 'C',
     link: 'https://openreview.net/pdf?id=nfbleBiK2Q',
-  },
-  {
-    title: 'Decoding Human Motion: A Scoping Review of Explainable AI Methods in Movement Analysis',
-    authors: 'Khan, N., Wang, D., Ghosh, R., Tauseef, M., Mion, L., Ma, M., Sarkar, N. ',
-    year: '2026',
-    venue: 'In Progress',
-    type: 'I',
   },
   {
     title: 'Toward Assessing Functional Decline in Mild Cognitive Impairment Using Wearable Sensors and Explainable Machine Learning',
@@ -40,13 +31,6 @@ const publications = [
     year: '2026',
     venue: 'Frontiers in Dementia',
     type: 'J',
-  },
-  {
-    title: 'Interpretable Deep Few-Shot Learning for Prediction of Precursors to Challenging Behaviors in Individuals with Intellectual and Developmental Disabilities',
-    authors: 'Khan, N., Shragge, I., Zilinskaite, G., Plunk, A., Staubitz, J., Rajaraman, A., Weitlauf, A., Sarkar, N.',
-    year: '2025',
-    venue: 'In Progress',
-    type: 'I',
   },
   {
     title: 'A multi-site randomized clinical trial of socially assistive robots on engaging older adults with cognitive impairment residing in long-term care settings: A protocol paper',
@@ -87,13 +71,6 @@ const publications = [
     venue: 'Innovation in Aging',
     type: 'J',
     link: 'https://doi.org/10.1093/geroni/igae098.2559',
-  },
-  {
-    title: 'Autistic User Input on Wearable Technology: Preliminary Feedback to Inform System Design',
-    authors: 'Weitlauf, A., Khan, N., Plunk, A., Sargent, A., Staubitz, J., Dieffenderfer, J., Sarkar, N.',
-    year: '2024',
-    venue: 'In Progress',
-    type: 'I',
   },
   {
     title: 'Pilot Study of a Real-time Early Agitation Capture Technology (REACT) for Children with Intellectual and Developmental Disabilities',
