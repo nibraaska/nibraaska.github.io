@@ -26,13 +26,6 @@ const publications = [
     link: 'https://doi.org/10.1177/20552076261444097',
   },
   {
-    title: 'Supporting Social Interaction and Engagement in Long-Term Care Through Paired Social Robot–Virtual Reality Interactions for Older Adults with Cognitive Impairment and Apathy',
-    authors: 'Migovich, M., Ghosh, R., Khan, N., Maxwell, C., Newhouse, P., Scharre, D., Tan, A., Tate, J., Mion, L., Sarkar, N.',
-    year: '2026',
-    venue: 'Frontiers in Dementia',
-    type: 'J',
-  },
-  {
     title: 'A multi-site randomized clinical trial of socially assistive robots on engaging older adults with cognitive impairment residing in long-term care settings: A protocol paper',
     authors: 'Tate, J., Mion, L., Migovich, M., Ghosh, R., Khan, N., Kilpatrick, A., Scharre, D., Newhouse, P., Maxwell, C., Tan, A., Sarkar, N.',
     year: '2025',
@@ -105,6 +98,14 @@ const publications = [
     link: 'https://arxiv.org/pdf/2308.10869',
   },
   {
+    title: 'Multimodal Job Interview Simulator for Training of Autistic Individuals',
+    authors: 'Adiani, D., Breen, M., Migovich, M., Wade, J., Hunt, S., Tauseef, M., Khan, N., Colopietro, K., Lanthier, M., Swanson, A., Vogus, T., Sarkar, N.',
+    year: '2024',
+    venue: 'Assistive Technology',
+    type: 'J',
+    link: 'https://doi.org/10.1080/10400435.2023.2188907',
+  },
+  {
     title: 'User-Centered Design for Socially Assistive Robotic Activities with Older Adults in Long Term Care',
     authors: 'Maxwell, C., Ghosh, R., Khan, N., Migovich, M., Tate, J., Latshaw, E., Lorraine, M., Sarkar, N.',
     year: '2023',
@@ -119,22 +120,6 @@ const publications = [
     venue: 'JMIR Human Factors',
     type: 'J',
     link: 'https://doi.org/10.2196/45957',
-  },
-  {
-    title: 'Multimodal Job Interview Simulator for Training of Autistic Individuals',
-    authors: 'Adiani, D., Breen, M., Migovich, M., Wade, J., Hunt, S., Tauseef, M., Khan, N., Colopietro, K., Lanthier, M., Swanson, A., Vogus, T., Sarkar, N.',
-    year: '2023',
-    venue: 'Assistive Technology',
-    type: 'J',
-    link: 'https://doi.org/10.1080/10400435.2023.2188907',
-  },
-  {
-    title: 'Participatory Design: An Essential Process For Socially Assistive Robotic Activities In Long-term Care Settings',
-    authors: 'Lorraine, M., Latshaw, E., Lin, Y., Migovich, M., Ghosh, R., Khan, N., Sarkar, N., Tate, J.',
-    year: '2023',
-    venue: 'Innovation in Aging',
-    type: 'A',
-    link: 'https://doi.org/10.1093/geroni/igac059.1661',
   },
   {
     title: 'Development of a Patient-Facing Mobile Health App to Track Family Access and Engagement with Early Intervention Services in Underserved Communities',
@@ -152,6 +137,14 @@ const publications = [
     link: 'https://doi.org/10.2139/ssrn.4431502',
   },
   {
+    title: 'Participatory Design: An Essential Process For Socially Assistive Robotic Activities In Long-term Care Settings',
+    authors: 'Lorraine, M., Latshaw, E., Lin, Y., Migovich, M., Ghosh, R., Khan, N., Sarkar, N., Tate, J.',
+    year: '2022',
+    venue: 'Innovation in Aging',
+    type: 'A',
+    link: 'https://doi.org/10.1093/geroni/igac059.1661',
+  },
+  {
     title: 'Semi-Supervised Generative Adversarial Network for Stress Detection Using Partially Labeled Physiological Data',
     authors: 'Khan, N., Sarkar, N.',
     year: '2022',
@@ -160,7 +153,7 @@ const publications = [
     link: 'https://arxiv.org/pdf/2206.14976',
   },
   {
-    title: 'Data Collection and Annotation Tool for Asynchronous Multimodal Data',
+    title: 'A Data Collection and Annotation Tool for Asynchronous Multimodal Data During Human-Computer Interactions',
     authors: 'Khan, N., Ghosh, R., Migovich, M., Johnson, A., Witherow, A., Taylor, C., Schroder, M., Vongpanya, T., Sarkar, M., Sarkar, N.',
     year: '2022',
     venue: 'HCI International',
@@ -202,7 +195,7 @@ const publications = [
   {
     title: 'Combined Model for Partially-Observable and Non-Observable Task Switching: Solving Hierarchical Reinforcement Learning Problems Statically and Dynamically with Transfer Learning',
     authors: 'Khan, N., Phillips, J.',
-    year: '2020',
+    year: '2019',
     venue: 'arXiv',
     type: 'X',
     link: 'https://arxiv.org/pdf/1911.10425',
