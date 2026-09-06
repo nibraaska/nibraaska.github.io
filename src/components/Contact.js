@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import Section from './Section';
-import { motion } from 'framer-motion';
+
+const fieldClass =
+  'w-full rounded border border-secondary-300 px-3 py-2 text-sm text-secondary-900 ' +
+  'placeholder:text-secondary-400 focus:border-primary-500 focus:outline-none ' +
+  'focus:ring-1 focus:ring-primary-500';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +25,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     try {
       const response = await fetch('https://formspree.io/f/xrbenobo', {
         method: 'POST',
@@ -30,15 +34,10 @@ const Contact = () => {
         },
         body: JSON.stringify(formData),
       });
-      
+
       if (response.ok) {
         setSubmitStatus('success');
-        setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: '',
-        });
+        setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
         setSubmitStatus('error');
       }
@@ -47,125 +46,111 @@ const Contact = () => {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
-      
-      // Reset status after 5 seconds
-      setTimeout(() => {
-        setSubmitStatus(null);
-      }, 5000);
+      setTimeout(() => setSubmitStatus(null), 5000);
     }
   };
 
   return (
-    <Section
-      id="contact"
-      title="Get In Touch"
-      className="bg-secondary-50"
-    >
-      <div className="max-w-2xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <h3 className="text-2xl font-bold text-secondary-900 mb-6">Send Me a Message</h3>
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-secondary-700 mb-1">
-                Your Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 rounded-lg border border-secondary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300"
-                placeholder="John Doe"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-secondary-700 mb-1">
-                Your Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 rounded-lg border border-secondary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300"
-                placeholder="john@example.com"
-              />
-            </div>
-            <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-secondary-700 mb-1">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 rounded-lg border border-secondary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300"
-                placeholder="How can I help you?"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-secondary-700 mb-1">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                rows={5}
-                className="w-full px-4 py-3 rounded-lg border border-secondary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300"
-                placeholder="Your message here..."
-              ></textarea>
-            </div>
-            <div>
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className={`w-full py-3 px-6 rounded-lg text-white font-medium transition-all duration-300 ${
-                  isSubmitting
-                    ? 'bg-primary-400 cursor-not-allowed'
-                    : 'bg-primary-600 hover:bg-primary-700 shadow-md hover:shadow-lg'
-                }`}
-              >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
-              </button>
-            </div>
-            {submitStatus === 'success' && (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="p-4 bg-green-100 text-green-800 rounded-lg"
-              >
-                Thank you for your message! I'll get back to you soon.
-              </motion.div>
-            )}
-            {submitStatus === 'error' && (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="p-4 bg-red-100 text-red-800 rounded-lg"
-              >
-                There was an error sending your message. Please try again later.
-              </motion.div>
-            )}
-          </form>
-        </motion.div>
-      </div>
+    <Section id="contact" title="Contact">
+      <p className="mb-6 max-w-3xl">
+        The quickest way to reach me is by email at{' '}
+        <a href="mailto:nnibraas@gmail.com">nnibraas@gmail.com</a>. You can also use the form
+        below.
+      </p>
+
+      <form onSubmit={handleSubmit} className="max-w-xl space-y-4">
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div>
+            <label
+              htmlFor="name"
+              className="mb-1 block text-sm text-secondary-600"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              className={fieldClass}
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="email"
+              className="mb-1 block text-sm text-secondary-600"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className={fieldClass}
+            />
+          </div>
+        </div>
+        <div>
+          <label
+            htmlFor="subject"
+            className="mb-1 block text-sm text-secondary-600"
+          >
+            Subject
+          </label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
+            required
+            className={fieldClass}
+          />
+        </div>
+        <div>
+          <label
+            htmlFor="message"
+            className="mb-1 block text-sm text-secondary-600"
+          >
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+            rows={6}
+            className={fieldClass}
+          />
+        </div>
+        <div className="flex items-center gap-4">
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="btn btn-primary disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            {isSubmitting ? 'Sending…' : 'Send message'}
+          </button>
+          {submitStatus === 'success' && (
+            <p className="text-sm text-secondary-600" role="status">
+              Thanks — I'll get back to you soon.
+            </p>
+          )}
+          {submitStatus === 'error' && (
+            <p className="text-sm text-red-700" role="status">
+              Something went wrong. Please email me directly.
+            </p>
+          )}
+        </div>
+      </form>
     </Section>
   );
 };
 
-export default Contact; 
+export default Contact;

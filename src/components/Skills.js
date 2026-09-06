@@ -1,82 +1,89 @@
 import React from 'react';
 import Section from './Section';
-import { motion } from 'framer-motion';
+
+const specializations = [
+  {
+    area: 'Explainable AI',
+    detail:
+      'Motion primitive discovery, prototype alignment, tiered stakeholder explanations, saliency over raw signals, counterfactual exploration, and model-agnostic APIs for PyTorch and TensorFlow.',
+  },
+  {
+    area: 'Few-Shot & Low-Data Learning',
+    detail:
+      'Neural processes, meta-learning, entropic optimal transport for cross-domain alignment, pseudo-sample generation, and clinical deployment under severe data scarcity and domain shift.',
+  },
+  {
+    area: 'Multimodal Sensor Fusion',
+    detail:
+      'Wearable IMUs, audio, and physiological signals; feature engineering across 50+ channels; and real-time ingestion and inference pipelines running on both mobile devices and cloud.',
+  },
+  {
+    area: 'Foundation Models & LLMs',
+    detail:
+      'Pretraining and post-training of transformer foundation models, fine-tuning, RAG, embedding and vector-search pipelines, and vision-language-action models on device.',
+  },
+  {
+    area: 'Agentic LLM Systems',
+    detail:
+      'Multi-agent pipelines with LangGraph, output-to-source provenance, role-based data scoping, PII redaction, NL-to-SQL, and locality-sensitive hashing for cached context injection.',
+  },
+  {
+    area: 'Time-Series & Behavioral Modeling',
+    detail:
+      'Bi-GRU with attention, LSTMs, GANs, and Siamese networks; digital biomarker discovery and precursor detection for behavioral prediction in clinical and industrial applications.',
+  },
+  {
+    area: 'End-to-End ML Systems',
+    detail:
+      'Full-stack deployment from hardware to cloud to app: custom PCBs, streaming firmware, Kafka ingestion, Airflow orchestration, Docker packaging, and iOS fleet delivery with continuous monitoring.',
+  },
+];
+
+const stack = [
+  {
+    label: 'Foundation Models & LLMs',
+    items: 'Pretraining, Fine-Tuning, RAG, Embeddings, Agentic/Multi-Agent (LangGraph), VLMs/VLA',
+  },
+  {
+    label: 'ML Methods',
+    items: 'Reinforcement Learning (PPO), Explainable AI, Few-Shot & Meta-Learning, Time-Series, Deep Learning (Transformers, RNNs, CNNs), Computer Vision',
+  },
+  {
+    label: 'Systems & Hardware',
+    items: 'Embedded firmware (ESP32), IMU & multimodal sensor integration, real-time on-device inference, full-stack (React, TypeScript)',
+  },
+  {
+    label: 'Frameworks & MLOps',
+    items: 'PyTorch, TensorFlow/Keras, Hugging Face Transformers, Scikit-learn, AWS (EC2, S3, SageMaker), Docker, Kafka, Airflow, Git',
+  },
+  {
+    label: 'Languages',
+    items: 'Python, C#, Kotlin, TypeScript, SQL, Bash',
+  },
+];
 
 const Skills = () => {
-  const specializations = [
-    {
-      area: 'Explainable AI',
-      detail: 'Motion primitive discovery, prototype alignment, tiered stakeholder explanations, saliency over raw signals, counterfactual exploration, and model-agnostic APIs for PyTorch and TensorFlow.',
-    },
-    {
-      area: 'Few-Shot & Low-Data Learning',
-      detail: 'Neural processes, meta-learning, entropic optimal transport for cross-domain alignment, pseudo-sample generation, and clinical deployment under data scarcity.',
-    },
-    {
-      area: 'Multimodal Sensor Fusion',
-      detail: 'Wearable IMUs, audio, and physiological signals; feature engineering across 50+ channels; real-time ingestion and inference pipelines on mobile and cloud.',
-    },
-    {
-      area: 'Agentic LLM Systems',
-      detail: 'Multi-agent pipelines with LangGraph, provenance tracking, role-based data scoping, PII redaction, NL-to-SQL, and locality-sensitive hashing for context injection.',
-    },
-    {
-      area: 'Time-Series & Behavioral Modeling',
-      detail: 'Bi-GRU with attention, LSTMs, GANs, Siamese networks, digital biomarker discovery, and precursor detection for clinical and industrial applications.',
-    },
-    {
-      area: 'End-to-End ML Systems',
-      detail: 'Full-stack deployment from hardware to cloud to app: custom PCBs, streaming firmware, Kafka ingestion, Airflow orchestration, Docker packaging, and iOS fleet delivery with continuous monitoring.',
-    },
-  ];
-
-  const stack = [
-    { label: 'Languages', items: 'Python, TypeScript, SQL, Kotlin, C#, Bash' },
-    { label: 'ML / AI', items: 'PyTorch, TensorFlow, Keras, Hugging Face Transformers, Scikit-learn, OpenCV, Optuna' },
-    { label: 'MLOps & Cloud', items: 'AWS (EC2, S3, SageMaker), Docker, Airflow, Kafka, GitHub Actions, Great Expectations, GCP' },
-    { label: 'Data & Databases', items: 'MongoDB, Supabase, SQLite, Firebase, Pandas, NumPy' },
-    { label: 'Dev & Mobile', items: 'React, React Native, Flask, WebSockets, Core ML, iOS / Android, Pytest' },
-  ];
-
   return (
-    <Section
-      id="skills"
-      title="Skills & Expertise"
-      className="bg-white"
-    >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-        {specializations.map((spec, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.08 }}
-            className="bg-secondary-50 rounded-xl p-6"
-          >
-            <h3 className="text-base font-semibold text-primary-700 mb-2">{spec.area}</h3>
-            <p className="text-sm text-secondary-600 leading-relaxed">{spec.detail}</p>
-          </motion.div>
+    <Section id="skills" title="Skills">
+      <h3 className="subsection-title">Research areas</h3>
+      <dl className="grid gap-x-10 gap-y-4 sm:grid-cols-2">
+        {specializations.map((spec) => (
+          <div key={spec.area}>
+            <dt className="item-title">{spec.area}</dt>
+            <dd className="mt-0.5 text-sm text-secondary-600">{spec.detail}</dd>
+          </div>
         ))}
-      </div>
+      </dl>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-        className="bg-secondary-50 rounded-xl p-6 md:p-8"
-      >
-        <h3 className="text-lg font-semibold text-secondary-900 mb-6">Stack</h3>
-        <div className="space-y-3">
-          {stack.map((row, index) => (
-            <div key={index} className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
-              <span className="text-sm font-semibold text-secondary-500 w-36 shrink-0">{row.label}</span>
-              <span className="text-sm text-secondary-700">{row.items}</span>
-            </div>
-          ))}
-        </div>
-      </motion.div>
+      <h3 className="subsection-title mt-7">Technical skills</h3>
+      <dl className="divide-y divide-secondary-200 border-t border-secondary-200">
+        {stack.map((row) => (
+          <div key={row.label} className="py-3 sm:grid sm:grid-cols-[11.5rem_1fr] sm:gap-x-6">
+            <dt className="text-sm text-secondary-500">{row.label}</dt>
+            <dd className="text-sm text-secondary-700">{row.items}</dd>
+          </div>
+        ))}
+      </dl>
     </Section>
   );
 };

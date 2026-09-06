@@ -1,19 +1,18 @@
 import React from 'react';
 import Layout from './components/Layout';
 import Hero from './components/Hero';
-import About from './components/About';
+import Education from './components/Education';
 import Experience from './components/Experience';
 import Publications from './components/Publications';
 import Skills from './components/Skills';
 import Service from './components/Service';
 import Contact from './components/Contact';
-import './App.css';
 
 function App() {
   return (
     <Layout>
       <Hero />
-      <About />
+      <Education />
       <Experience />
       <Publications />
       <Skills />
