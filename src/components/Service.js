@@ -21,7 +21,7 @@ const Service = () => {
   return (
     <Section id="service" title="Service">
       <dl className="divide-y divide-secondary-200 border-t border-secondary-200">
-        <div className="py-3 sm:grid sm:grid-cols-[8rem_1fr] sm:gap-x-6">
+        <div className="py-3 sm:grid sm:grid-cols-[10rem_1fr] sm:gap-x-6">
           <dt className="mb-1 text-sm text-secondary-500 sm:mb-0">Journal reviewer</dt>
           <dd>
             <ul className="max-w-3xl space-y-1 text-sm">
@@ -31,7 +31,7 @@ const Service = () => {
             </ul>
           </dd>
         </div>
-        <div className="py-4 sm:grid sm:grid-cols-[8rem_1fr] sm:gap-x-6">
+        <div className="py-4 sm:grid sm:grid-cols-[10rem_1fr] sm:gap-x-6">
           <dt className="mb-1 text-sm text-secondary-500 sm:mb-0">Conference reviewer</dt>
           <dd>
             <ul className="max-w-3xl space-y-1 text-sm">

@@ -142,9 +142,6 @@ const Layout = ({ children }) => {
             </div>
             <ul className="flex flex-wrap gap-x-5 gap-y-2">
               <li>
-                <a href="mailto:nnibraas@gmail.com">nnibraas@gmail.com</a>
-              </li>
-              <li>
                 <a
                   href="https://scholar.google.com/citations?user=2wlosyoAAAAJ"
                   target="_blank"

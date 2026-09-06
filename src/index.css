@@ -36,6 +36,12 @@
     @apply pt-7 pb-1 md:pt-8;
   }
 
+  /* Sections rely on the next one's top padding for separation, but the
+     footer has none, so the last section needs a real tail of its own. */
+  main > section:last-child {
+    @apply pb-12;
+  }
+
   /* Three heading levels, used consistently across every section.
      1. section  - serif, 2xl, hairline rule  (Experience, Publications, ...)
      2. subsection - serif, lg                (Research areas, Tools)

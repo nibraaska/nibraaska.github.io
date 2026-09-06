@@ -7,10 +7,10 @@ const experienceData = [
     company: 'Cambridge Mobile Telematics',
     location: 'Cambridge, MA',
     period: 'Sept 2026 – Present',
-    responsibilities: [],
+    responsibilities: ['Working on the foundation model team.'],
   },
   {
-    title: 'Research Scientist Intern – Few-Shot Learning',
+    title: 'Research Scientist Intern, Few-Shot Learning',
     company: 'Mitsubishi Electric Research Laboratories',
     location: 'Cambridge, MA',
     period: 'Jan 2026 – July 2026',
@@ -20,7 +20,7 @@ const experienceData = [
     ],
   },
   {
-    title: 'Applied Scientist Intern – Multi-Agent Systems',
+    title: 'Applied Scientist Intern, Multi-Agent Systems',
     company: 'Actual Insight',
     location: 'Nashville, TN',
     period: 'Oct 2025 – Jan 2026',
@@ -74,7 +74,7 @@ const experienceData = [
     location: 'Murfreesboro, TN',
     period: 'Aug 2018 – May 2020',
     responsibilities: [
-      'Combined the Working Memory and N-task Learning toolkit to create the Partially Observable Non-Observable toolkit',
+      'Combined the Working Memory and N-task Learning toolkit into the Partially Observable Non-Observable toolkit',
       'Improved it via dynamic features and neural network value transfer based on computational neuroscience models',
       'Implemented reinforcement learning algorithms for task switching problems',
       'Conducted experiments and analyzed results for publication',
