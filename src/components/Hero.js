@@ -19,12 +19,11 @@ const Hero = () => {
               Machine Learning Engineer II, Cambridge Mobile Telematics
             </p>
             <p className="max-w-3xl text-secondary-700 mb-5">
-              I am a Machine Learning Engineer II at Cambridge Mobile Telematics, where I work
-              on building foundation models. Before that, I completed my Ph.D. in Computer
-              Science at Vanderbilt University, advised by Prof. Nilanjan Sarkar in the
-              Robotics and Autonomous Systems Lab. My research broadly focuses on interpretable
-              machine learning, foundation models, and multimodal sensing, with applications to
-              human motion analysis and health.
+              Currently developing foundation models that learn from large-scale sensor data.
+              Before that, I completed my Ph.D. in Computer Science at Vanderbilt University,
+              advised by Prof. Nilanjan Sarkar in the Robotics and Autonomous Systems Lab. My
+              research broadly focuses on interpretable machine learning, foundation models,
+              and multimodal sensing.
             </p>
             <p className="max-w-3xl text-secondary-600 mb-5">
               Interests: cooking, boxing, watchmaking, and visiting every restaurant possible.
