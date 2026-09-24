@@ -18,15 +18,16 @@ const Hero = () => {
             <p className="text-secondary-600 mb-6">
               Machine Learning Engineer II, Cambridge Mobile Telematics
             </p>
-            <p className="max-w-3xl text-secondary-700 mb-4">
-              Research scientist and applied AI engineer, shipping interpretable machine
-              learning from prototype to production across healthcare, industrial sensing, and
-              multi-agent systems. My methods span explainable AI, few-shot learning,
-              multimodal sensor fusion, LLMs, VLMs, and agentic pipelines.
+            <p className="max-w-3xl text-secondary-700 mb-5">
+              I am a Machine Learning Engineer II at Cambridge Mobile Telematics, where I work
+              on building foundation models. Before that, I completed my Ph.D. in Computer
+              Science at Vanderbilt University, advised by Prof. Nilanjan Sarkar in the
+              Robotics and Autonomous Systems Lab. My research broadly focuses on interpretable
+              machine learning, foundation models, and multimodal sensing, with applications to
+              human motion analysis and health.
             </p>
             <p className="max-w-3xl text-secondary-600 mb-5">
-              Outside of work I cook, box, and hunt down new restaurants. English, plus
-              conversational Hindi and Urdu.
+              Interests: cooking, boxing, watchmaking, and visiting every restaurant possible.
             </p>
             <ul className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
               {links.map((link) => (

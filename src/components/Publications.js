@@ -26,6 +26,14 @@ const publications = [
     link: 'https://doi.org/10.1177/20552076261444097',
   },
   {
+    title: 'Detecting Agitation Before Behavioral Escalation in Autistic Youth Through Multimodal Wearable Sensing',
+    authors: 'Khan, N., Plunk, A., Staubitz, J., Shragge, I., Brooks, J., Wright, S., Brewer, A., Dieffenderfer, J., Bozkurt, A., Weitlauf, A., Sarkar, N.',
+    year: '2026',
+    venue: 'arXiv',
+    type: 'X',
+    link: 'https://arxiv.org/pdf/2609.24791',
+  },
+  {
     title: 'A multi-site randomized clinical trial of socially assistive robots on engaging older adults with cognitive impairment residing in long-term care settings: A protocol paper',
     authors: 'Tate, J., Mion, L., Migovich, M., Ghosh, R., Khan, N., Kilpatrick, A., Scharre, D., Newhouse, P., Maxwell, C., Tan, A., Sarkar, N.',
     year: '2025',
