@@ -66,8 +66,9 @@ const Layout = ({ children }) => {
                 <li key={item.id}>
                   <a
                     href={`#${item.id}`}
-                    className={`link-quiet ${
-                      activeSection === item.id ? 'text-primary-700' : ''
+                    data-label={item.label}
+                    className={`nav-link ${
+                      activeSection === item.id ? 'nav-link-active' : ''
                     }`}
                     onClick={(e) => {
                       e.preventDefault();
@@ -111,8 +112,9 @@ const Layout = ({ children }) => {
                 <li key={item.id}>
                   <a
                     href={`#${item.id}`}
-                    className={`link-quiet ${
-                      activeSection === item.id ? 'text-primary-700' : ''
+                    data-label={item.label}
+                    className={`nav-link ${
+                      activeSection === item.id ? 'nav-link-active' : ''
                     }`}
                     onClick={(e) => {
                       e.preventDefault();

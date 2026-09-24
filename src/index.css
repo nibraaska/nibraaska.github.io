@@ -63,6 +63,27 @@
     @apply no-underline text-secondary-600 hover:text-primary-700 transition-colors;
   }
 
+  /* Nav items go bold for the section currently in view. Bold text is wider
+     than regular, so each item reserves its bold width up front via a hidden
+     copy; without this the row shifts sideways as you scroll. */
+  .nav-link {
+    @apply link-quiet inline-block;
+  }
+
+  .nav-link::after {
+    content: attr(data-label);
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    font-weight: 600;
+    pointer-events: none;
+  }
+
+  .nav-link-active {
+    @apply font-semibold text-primary-700;
+  }
+
   .btn {
     @apply inline-flex items-center justify-center rounded px-4 py-2 text-sm font-medium
            no-underline transition-colors focus:outline-none focus:ring-2
