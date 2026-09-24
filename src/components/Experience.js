@@ -3,7 +3,7 @@ import Section from './Section';
 
 const experienceData = [
   {
-    title: 'Machine Learning Engineer 2',
+    title: 'Machine Learning Engineer II',
     company: 'Cambridge Mobile Telematics',
     location: 'Cambridge, MA',
     period: 'Sept 2026 – Present',

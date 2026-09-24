@@ -137,7 +137,7 @@ const Layout = ({ children }) => {
               <p className="font-serif text-base font-semibold text-secondary-900">
                 Nibraas Khan
               </p>
-              <p>Machine Learning Engineer 2, Cambridge Mobile Telematics</p>
+              <p>Machine Learning Engineer II, Cambridge Mobile Telematics</p>
               <p>Cambridge, MA, USA</p>
             </div>
             <ul className="flex flex-wrap gap-x-5 gap-y-2">

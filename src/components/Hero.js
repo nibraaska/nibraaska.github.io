@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="flex-1">
             <h1 className="text-3xl md:text-4xl mb-1">Nibraas Khan</h1>
             <p className="text-secondary-600 mb-6">
-              Machine Learning Engineer 2, Cambridge Mobile Telematics
+              Machine Learning Engineer II, Cambridge Mobile Telematics
             </p>
             <p className="max-w-3xl text-secondary-700 mb-4">
               Research scientist and applied AI engineer, shipping interpretable machine
